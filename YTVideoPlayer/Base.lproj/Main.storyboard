@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="YTVideoPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NJh-Ck-1Q5" customClass="YTPlayerView">
+                                <rect key="frame" x="0.0" y="52" width="390" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="LWM-WY-SjS"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9G5-f6-UVW">
+                                <rect key="frame" x="95" y="372" width="200" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Ow8-Tj-Rg0"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Daily Dose of Internet">
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonPlaylistOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hdp-IY-s9G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcW-49-yLo">
+                                <rect key="frame" x="95" y="422" width="200" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="mrs-s8-AIH"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Fail Army">
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonPlaylistTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I0Z-En-qaf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cga-Gl-PHB">
+                                <rect key="frame" x="95" y="472" width="200" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="EQo-3U-gxl"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Random Video">
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonRandomVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jad-n9-p6h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DwW-Qh-yf2">
+                                <rect key="frame" x="295" y="472" width="49" height="34"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="info.square" catalog="system">
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="chF-cV-fR5"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Video ID" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d5r-YM-cVe">
+                                <rect key="frame" x="95" y="537" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="lAB-t8-cFI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAl-in-CdV">
+                                <rect key="frame" x="120" y="586" width="150" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="JYd-N4-vtm"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Search ID">
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonSearchID:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9nL-hm-Sze"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whd-Zi-gsP">
+                                <rect key="frame" x="295" y="537" width="49" height="34"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="info.square" catalog="system">
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1F7-Mu-ath"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NJh-Ck-1Q5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0z5-XO-d0T"/>
+                            <constraint firstItem="9G5-f6-UVW" firstAttribute="top" secondItem="NJh-Ck-1Q5" secondAttribute="bottom" constant="20" id="1vu-wB-WYg"/>
+                            <constraint firstItem="d5r-YM-cVe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EBt-5u-JIT"/>
+                            <constraint firstItem="DwW-Qh-yf2" firstAttribute="leading" secondItem="Cga-Gl-PHB" secondAttribute="trailing" id="QZp-c9-w3u"/>
+                            <constraint firstItem="whd-Zi-gsP" firstAttribute="top" secondItem="DwW-Qh-yf2" secondAttribute="bottom" constant="31" id="ReM-Hv-zfb"/>
+                            <constraint firstItem="mcW-49-yLo" firstAttribute="top" secondItem="9G5-f6-UVW" secondAttribute="bottom" constant="15" id="S6e-Fq-ofK"/>
+                            <constraint firstItem="NJh-Ck-1Q5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="Ujd-SG-ULF"/>
+                            <constraint firstItem="uAl-in-CdV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W0S-Yu-npW"/>
+                            <constraint firstItem="Cga-Gl-PHB" firstAttribute="top" secondItem="mcW-49-yLo" secondAttribute="bottom" constant="15" id="XVb-xD-nG0"/>
+                            <constraint firstItem="whd-Zi-gsP" firstAttribute="leading" secondItem="d5r-YM-cVe" secondAttribute="trailing" id="Xlg-wc-aLu"/>
+                            <constraint firstItem="9G5-f6-UVW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eC7-Ko-je6"/>
+                            <constraint firstItem="mcW-49-yLo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g4k-hz-oT7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NJh-Ck-1Q5" secondAttribute="trailing" id="gyB-1i-SMG"/>
+                            <constraint firstItem="DwW-Qh-yf2" firstAttribute="top" secondItem="NJh-Ck-1Q5" secondAttribute="bottom" constant="120" id="tU1-7U-LRi"/>
+                            <constraint firstItem="uAl-in-CdV" firstAttribute="top" secondItem="d5r-YM-cVe" secondAttribute="bottom" constant="15" id="vky-gC-1QC"/>
+                            <constraint firstItem="Cga-Gl-PHB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vpB-t2-Beu"/>
+                            <constraint firstItem="d5r-YM-cVe" firstAttribute="top" secondItem="Cga-Gl-PHB" secondAttribute="bottom" constant="30" id="w8e-r6-sF0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playerView" destination="NJh-Ck-1Q5" id="xYS-Fv-va7"/>
+                        <outlet property="randomVideoInfo" destination="DwW-Qh-yf2" id="eyO-cu-eBQ"/>
+                        <outlet property="videoIDInfo" destination="whd-Zi-gsP" id="kp7-fZ-XkL"/>
+                        <outlet property="videoIDText" destination="d5r-YM-cVe" id="DXE-7h-8sf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.846153846153847" y="-28.436018957345969"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="info.square" catalog="system" width="128" height="114"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
